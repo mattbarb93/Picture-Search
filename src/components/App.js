@@ -9,6 +9,7 @@ class App extends React.Component {
 
   render() {
     return (
+      //Pass onSearchSubmit to SearchBar child component as a prop
       <div className="ui container" style={{ marginTop: "10px" }}>
         <SearchBar onSubmit={this.onSearchSubmit} />
       </div>
