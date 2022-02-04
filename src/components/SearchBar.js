@@ -8,7 +8,8 @@ class SearchBar extends React.Component {
   onFormSubmit = (event) => {
     event.preventDefault(); //Prevents form to automatically be submitted and the browser from reloading
 
-    console.log(this.state.term);
+    //Invoking callbacks from child
+    this.props.onSubmit(this.state.term);
   };
 
   render() {
